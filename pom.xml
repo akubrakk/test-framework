@@ -67,6 +67,12 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
         </dependency>
+        <dependency>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <version>2.12.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke API Test Suite" verbose="0" thread-count="30" parallel="methods">
+
+    <test name="Petstore Pet API tests">
+        <classes>
+<class name="io.swagger.petstore.tests.pet.PetPetIdUploadImageTest"></class>
+        </classes>
+    </test>
+    <test name="Petstore User API tests">
+        <classes>
+            <class name="io.swagger.petstore.tests.user.GetUserLoginTest"></class>
+            <class name="io.swagger.petstore.tests.user.GetUserLogoutTest"></class>
+            <class name="io.swagger.petstore.tests.user.DeleteUserUserNameTest"></class>
+            <class name="io.swagger.petstore.tests.user.PostUserTest"></class>
+            <class name="io.swagger.petstore.tests.user.PostUserCreateWithArrayTest"></class>
+        </classes>
+    </test>
+</suite>
