@@ -44,4 +44,11 @@ public class UserApiService extends ApiService {
                 .when()
                 .get("user/login"));
     }
+    @Step
+    public AssertableResponse getUserByUsername(String userName){
+        return new AssertableResponse(request()
+                .pathParam("username", userName)
+                .when()
+                .get("user/{username}"));
+    }
 }

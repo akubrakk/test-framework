@@ -20,4 +20,11 @@ return new AssertableResponse(requestMultipart()
         .when()
         .post("pet/{petId}/uploadImage"));
    }
+    @Step
+    public AssertableResponse getPetById(int petId){
+        return new AssertableResponse(requestMultipart()
+                .pathParam("petId",petId)
+                .when()
+                .get("pet/{petId}"));
+    }
 }
