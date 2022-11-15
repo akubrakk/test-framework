@@ -12,7 +12,7 @@ public class PetPetIdUploadImageTest extends PetBaseTest{
 
     @Test
     public void testPostPetPetIdUploadImage(){
-        String filePath = "src/test/resources/io.swagger.petstore/pet/68985568.jpg";
+        String filePath = "src/test/resources/io/swagger/petstore/tests/pet/68985568.jpg";
 
         petApiService.postPetPetIdUploadImage(5,"test",filePath)
                 .shouldHave(statusCode(SC_OK))
