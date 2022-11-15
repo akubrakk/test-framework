@@ -19,7 +19,7 @@ public class TestDataProvider {
         File file = new File(getClassLocation(clazz));
         ObjectMapper om = new ObjectMapper(new YAMLFactory());
         try {
-            om.readValue(file, tModel);
+            return om.readValue(file, tModel);
         } catch (IOException e) {
             log.warn(e.getMessage());
         } return null;
